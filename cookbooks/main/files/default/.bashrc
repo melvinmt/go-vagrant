@@ -102,5 +102,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:/var/www/app/bin
 export PATH
+
+GOPATH=/var/www/app
+export GOPATH
