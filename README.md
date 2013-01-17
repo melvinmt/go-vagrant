@@ -9,3 +9,7 @@ The only thing I haven't figured out yet is how to export a path in a recipe so 
     export PATH=$PATH:/var/www/app/bin
 
 I'll update this as soon as I've fixed it.
+
+# Get started
+
+Place/clone all your go packages in `/var/www/app/src` and `go build` or `go install` from there!
