@@ -34,11 +34,6 @@ apt_repository "gophers-go-ppa" do
   action :add
 end
 
-# This doesn't work yet.. but I keep trying
-execute "export_go_paths" do
-  command "export GPATH=/var/www/app"
-  command "export PATH=$PATH:/var/www/app/bin"
-end
 
 # Update the apt-get list again
 execute "second-sudo-apt-get-update" do
