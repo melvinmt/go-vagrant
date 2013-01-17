@@ -20,16 +20,9 @@ cookbook_file "/home/vagrant/.bashrc" do
   action :create
 end
 
-# Installs latest stable mongodb
-apt_repository "mongo-10gen" do
-  uri "http://downloads-distro.mongodb.org/repo/ubuntu-upstart"
-  distribution "dist"
-  components ["10gen"]
-  key "7F0CEB10"
-  keyserver "keyserver.ubuntu.com"
-  action :add
-end
-package "mongodb-10gen"
+include_recipe "mongodb::10gen_repo"
+
+include_recipe "mongodb::default"
 
 # Add ppa apt repository for go
 apt_repository "gophers-go-ppa" do
