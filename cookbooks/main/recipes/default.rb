@@ -34,10 +34,8 @@ apt_repository "gophers-go-ppa" do
   action :add
 end
 
-
-# Update the apt-get list again
-execute "second-sudo-apt-get-update" do
-  command "apt-get update"
+execute "apt-get update" do
+  action :nothing
 end
 
 # Install go stable
