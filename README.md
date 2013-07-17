@@ -10,7 +10,10 @@ Install [vagrant](http://downloads.vagrantup.com/) on your machine.
 Open terminal:
 
     git clone https://github.com/melvinmt/go-vagrant.git name-of-go-project
-    cd name-of-go-project/vagrant
+    cd name-of-go-project
+    git submodule update --init --recursive
+    cd vagrant
     vagrant up
+    
    
 Place/clone all your go packages in src and `go build` or `go install` from there!
