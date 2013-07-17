@@ -1,0 +1,12 @@
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = https://github.com/cookbooks/apt.git
+[submodule "cookbooks/git"]
+	path = cookbooks/git
+	url = https://github.com/cookbooks/git.git
+[submodule "cookbooks/golang"]
+	path = cookbooks/golang
+	url = https://github.com/michaelklishin/go-language-chef-cookbook
+[submodule "cookbooks/mongodb"]
+	path = cookbooks/mongodb
+	url = https://github.com/edelight/chef-mongodb
