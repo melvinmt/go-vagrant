@@ -1,0 +1,15 @@
+{
+	"name": "main-app",
+	"description": "Role for main golang development app server",
+	"chef_type": "role",
+	"json_class": "Chef::Role",
+	"default_attributes": {
+		"mongodb": {
+			"package_version": "2.4.5"
+		}
+	},
+	"run_list": [
+		"recipe[mongodb::10gen_repo]",
+		"recipe[go-vagrant]"
+	]
+}
