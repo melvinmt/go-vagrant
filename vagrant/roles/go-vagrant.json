@@ -6,10 +6,18 @@
 	"default_attributes": {
 		"mongodb": {
 			"package_version": "2.4.5"
+		},
+		"go": {
+			"version": "1.1.1"
 		}
 	},
 	"run_list": [
 		"recipe[mongodb::10gen_repo]",
-		"recipe[go-vagrant]"
+		"recipe[golang]",
+		"recipe[git]",
+		"recipe[bazaar]",
+		"recipe[mercurial::default]",
+		"recipe[go-vagrant]",
+		"recipe[mongodb::default]"
 	]
 }

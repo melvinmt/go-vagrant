@@ -20,11 +20,3 @@ template "/home/vagrant/.bashrc" do
   owner "vagrant"
   group "vagrant"
 end
-
-include_recipe "mongodb::default"
-
-include_recipe "golang::default"
-
-include_recipe "git"
-
-include_recipe "bazaar"
