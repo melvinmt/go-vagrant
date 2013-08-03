@@ -17,7 +17,7 @@
 		"recipe[git]",
 		"recipe[bazaar]",
 		"recipe[mercurial::default]",
-		"recipe[go-vagrant]",
-		"recipe[mongodb::default]"
+		"recipe[mongodb::default]",
+		"recipe[go-vagrant]"
 	]
 }

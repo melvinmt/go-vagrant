@@ -1,6 +1,8 @@
 # Installs apt-get
 require_recipe "apt"
 
+require_recipe "golang"
+
 execute "apt-key" do
   command "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10"
 end
@@ -20,3 +22,12 @@ template "/home/vagrant/.bashrc" do
   owner "vagrant"
   group "vagrant"
 end
+
+execute "install-revel-framework" do
+  command "go get github.com/robfig/revel"
+end
+
+execute "install-revel-cli" do
+  command "go get github.com/robfig/revel/revel"
+end
+
