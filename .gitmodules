@@ -6,7 +6,10 @@
 	url = https://github.com/cookbooks/git.git
 [submodule "cookbooks/golang"]
 	path = vagrant/cookbooks/golang
-	url = https://github.com/michaelklishin/go-language-chef-cookbook
+	url = https://github.com/NOX73/chef-golang
 [submodule "cookbooks/mongodb"]
 	path = vagrant/cookbooks/mongodb
 	url = https://github.com/edelight/chef-mongodb
+[submodule "cookbooks/mercurial"]
+	path = vagrant/cookbooks/mercurial
+	url = https://github.com/opscode-cookbooks/mercurial
