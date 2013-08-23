@@ -24,10 +24,10 @@ template "/home/vagrant/.bashrc" do
 end
 
 execute "install-revel-framework" do
-  command "go get github.com/robfig/revel"
+  command "go get github.com/melvinmt/revel"
 end
 
 execute "install-revel-cli" do
-  command "go get github.com/robfig/revel/revel"
+  command "go get github.com/melvinmt/revel/revel"
 end
 
